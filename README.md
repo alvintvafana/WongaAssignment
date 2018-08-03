@@ -12,3 +12,9 @@ docker run rabbitsender -d -name alvintvafana/rabbitsender -p 5671:5671 -p 5672:
 To run Receiver Console
 ========================
 docker run rabbitreceiver –name alvintvafana/rabbitreceiver  -p 5671:5671 -p 5672:5672 
+
+
+Pattern Used
+===========
+For the receiver the observor pattern was used and the RabbitMQ, class was made a subject to notify our console class when ever a new message comes along.
+
