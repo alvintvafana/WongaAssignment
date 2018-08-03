@@ -7,8 +7,8 @@ docker run -d --hostname RabbitMQ --name WongaAssignement -e RABBITMQ_DEFAULT_US
 
 To run Sender Console
 =====================
-docker run alvintvafana/rabbitsender -d -name rabbit-sender  -p 5671:5671 -p 5672:5672 
+docker run rabbitsender -d -name alvintvafana/rabbitsender -p 5671:5671 -p 5672:5672 
 
 To run Receiver Console
 ========================
-docker run alvintvafana/rabbitreceiver –name rabbit-receiver  -p 5671:5671 -p 5672:5672 
+docker run rabbitreceiver –name alvintvafana/rabbitreceiver  -p 5671:5671 -p 5672:5672 
